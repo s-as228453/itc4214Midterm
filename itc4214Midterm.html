@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" >
+    <title>Index Page</title>
+    <style>
+        .header{
+            background-color: cadetblue;
+            padding: 10px;
+            padding-top: 15px;
+            width: 100%;
+            display:flex;
+            position: fixed;
+            top:0;
+            z-index: 2;
+        }
+
+        .btn{
+            margin: 10px;
+            padding: 10px 10px 10px 10px;
+            border-radius: 10px;
+            align-content: center;
+        }
+
+        .footer {
+            
+            position:fixed;
+            bottom:0;
+            width:100%;
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .content{
+            position: relative;
+            padding-bottom:40px;
+            top:100px;
+            z-index: 1;
+        }
+
+    </style>
+
 </head>
 <body>
+    <header class="header" id="header">
+
+        <img class="image" id="logo" src="logo.png" height="70px" width="70px">
+        <h2 class="heading" id="heading">Grade your Students</h2>
+        <button type="button" class="btn btn-primary" id="home">Home</button>
+        <button type="button" class="btn btn-primary" id="about">About</button>
+    </header>
+
+    <div class="content">
+
+    </div>
     
+    <footer class="footer">
+
+        <a class="link" href="#">Home</a>
+        <br>
+        <a class="link" href="#">About</a>       
+
+    </footer>
+
 </body>
 </html>
