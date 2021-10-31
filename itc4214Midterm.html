@@ -43,7 +43,37 @@
 
     <!-- FORM, TABLE, BUTTON, SORTING FEATURE -->
     <div class="content">
+        <form>
+            <div class="form-group">
+                <label>Surname</label>
+                <input class="form" id="surname" type="text" placeholder="Enter the surname of the student">
+                <label>Grade</label>
+                <input class="form" id="grade" type="number" placeholder="Enter the grade of the student">
+                <button class="form-btn" id="button" type="submit">Add Grade</button>
+            </div>
+        </form>
 
+        <table class="table" id="table">
+            <thead>
+              <tr>
+                <th scope="col">Surname</th>
+                <th scope="col">Grade</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Smith</td>
+                <td>7</td>
+                <td><button type="button" class="btn btn-primary btn-lg" >Delete</button></td>
+              </tr>
+              <tr>
+                <td>Thornton</td>
+                <td>9</td>
+                <td><button type="button" class="btn btn-primary btn-lg">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
     </div>
     
     <!-- FOOTER -->
