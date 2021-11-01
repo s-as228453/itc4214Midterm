@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="submit.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Index Page</title>
+    <title>TeachHelp</title>
 </head>
 
 <body>
@@ -48,57 +50,19 @@
                 <label>Surname</label>
                 <input class="form" id="surname" type="text" placeholder="Enter the surname of the student">
                 <label>Grade</label>
-                <input class="form" id="grade" type="number" placeholder="Enter the grade of the student">
-                <button class="form-btn" id="button" type="submit">Add Grade</button>
+                <input class="form" id="grade" type="number" min="0" max="10" placeholder="Enter the grade of the student">
+                <button class="form-btn" id="button" type='button' onclick="AddData();">Add Grade</button>
             </div>
         </form>
-<<<<<<< HEAD
 
         <table class="table" id="table">
             <thead>
               <tr>
-                <th scope="col">Surname</th>
-                <th scope="col">Grade</th>
-                <th scope="col"></th>
+                <td>Surname</td>
+                <td>Grade</td>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Smith</td>
-                <td>7</td>
-                <td><button type="button" class="btn btn-primary btn-lg" >Delete</button></td>
-              </tr>
-              <tr>
-                <td>Thornton</td>
-                <td>9</td>
-                <td><button type="button" class="btn btn-primary btn-lg">Delete</button></td>
-              </tr>
-            </tbody>
-          </table>
-
-=======
->>>>>>> 62abfadae34bc7910f725bdf61c07955cda70796
-
-        <table class="table" id="table">
-            <thead>
-              <tr>
-                <th scope="col">Surname</th>
-                <th scope="col">Grade</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Smith</td>
-                <td>7</td>
-                <td><button type="button" class="btn btn-primary btn-lg" >Delete</button></td>
-              </tr>
-              <tr>
-                <td>Thornton</td>
-                <td>9</td>
-                <td><button type="button" class="btn btn-primary btn-lg">Delete</button></td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
     </div>
     
