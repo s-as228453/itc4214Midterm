@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="jquery-3.6.0.js"></script>
     <script src="functionality.js"></script>
-    <title>Index Page</title>
+    <title>TeachHelp</title>
 
 </head>
 
@@ -53,8 +53,21 @@
                 <label>Surname</label>
                 <input class="form" id="surname" type="text" placeholder="Enter the surname of the student">
                 <label>Grade</label>
-                <input class="form" id="grade" type="number" placeholder="Enter the grade of the student">
-                <button class="button" id="add_btn" type="submit">Add Grade</button>
+                <input class="form" id="grade" type="number" min="0" max="10" placeholder="Enter the grade of the student">
+                <button class="button" id="add_btn" type="submit" disabled>Add Grade</button>
+
+                <script>
+                    $(document).ready(function() {
+                        $('.form').keyup(function(){
+
+                            if($(this).val().length !=0)
+                                $('#add_btn').attr('disabled', false);            
+                            else
+                                $('#add_btn').attr('disabled',true);
+                        })
+                    });
+                </script>
+
             </div>
         </form>
 
@@ -67,11 +80,7 @@
                     <th scope="col"></th>
                 </tr>
             </thead>
-            <tbody>
-                <td>Smith</td>
-                <td>7</td>
-                <td><button id="delete_btn" type="button" class="btn btn-primary btn-lg">Delete</button></td>
-            </tbody>
+            <tbody></tbody>
         </table>
     </div>
 
