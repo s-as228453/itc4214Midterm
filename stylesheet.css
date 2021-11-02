@@ -36,6 +36,10 @@ ol, li, button {
     border-radius: 10px;
 }
 
+body{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .content{
     font-family: "Roboto", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
@@ -72,7 +76,11 @@ ol, li, button {
     padding: .5rem 5rem;
 }
 
-.footer {
+.card-img-top{
+    padding: 20px;
+}
+
+.footer-basic {
     background-image: linear-gradient(#0099FF, #00BBFF, #00cee9, #00E8B9);
     position:fixed;
     bottom:0;
